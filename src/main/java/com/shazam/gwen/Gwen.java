@@ -11,6 +11,10 @@ package com.shazam.gwen;
 
 public class Gwen
 {
+	public static <T> T given(Given<T> object) {
+		return object.given();
+	}
+
     public static <T> T given(T object) {
         return object;
     }
@@ -18,6 +22,10 @@ public class Gwen
     public static <T> T when(T object) {
         return object;
     }
+
+	public static <T> T then(Then<T> object) {
+		return object.then();
+	}
 
     public static <T> T then(T object) {
         return object;
