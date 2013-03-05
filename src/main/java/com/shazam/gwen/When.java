@@ -9,6 +9,6 @@
 */
 package com.shazam.gwen;
 
-public interface Then<T> {
-	T then();
+public interface When<T> {
+	T when();
 }

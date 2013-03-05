@@ -18,5 +18,5 @@ package com.shazam.gwen;
  */
 public interface Action<T, K>
 {
-    K actOn(T objectToActOn);
+	K actOn(T objectToActOn);
 }

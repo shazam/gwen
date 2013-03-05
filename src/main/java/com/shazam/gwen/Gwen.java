@@ -15,23 +15,27 @@ public class Gwen
 		return object.given();
 	}
 
-    public static <T> T given(T object) {
-        return object;
-    }
+	public static <T> T given(T object) {
+		return object;
+	}
 
-    public static <T> T when(T object) {
-        return object;
-    }
+	public static <T> T when(When<T> object) {
+		return object.when();
+	}
+
+	public static <T> T when(T object) {
+		return object;
+	}
 
 	public static <T> T then(Then<T> object) {
 		return object.then();
 	}
 
-    public static <T> T then(T object) {
-        return object;
-    }
+	public static <T> T then(T object) {
+		return object;
+	}
 
-    public static <T> T and(T object) {
-        return object;
-    }
+	public static <T> T and(T object) {
+		return object;
+	}
 }
