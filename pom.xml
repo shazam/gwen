@@ -7,7 +7,44 @@
     <artifactId>gwen</artifactId>
     <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Library for specifying acceptance criteria in tests in a Given-When-Then format</name>
+    <name>Gwen</name>
+    <description>Library for specifying acceptance criteria in tests in a Given-When-Then format</description>
+    <url>http://github.com/shazam/gwen</url>
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/shazam/gwen.git</connection>
+        <developerConnection>scm:git:git@github.com:shazam/gwen.git</developerConnection>
+        <url>http://github.com/shazam/gwen</url>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <inherited>true</inherited>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     
 </project>
 
