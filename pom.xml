@@ -31,6 +31,24 @@
         <url>http://github.com/shazam/gwen</url>
     </scm>
 
+    <profiles>
+        <profile>
+            <id>customDeployment</id>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>snapshots</id>
+                    <name>Nexus Snapshots</name>
+                    <url>${snapshotsUrl}</url>
+                </snapshotRepository>
+                <repository>
+                    <id>releases</id>
+                    <name>Nexus Release Repository</name>
+                    <url>${releasesUrl}</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
