@@ -16,7 +16,6 @@ package com.shazam.gwen;
  * @param <T> The type of the object to act upon.
  * @param <K> The type describing the state of the system.
  */
-public interface Action<T, K>
-{
+public interface Action<T, K> {
 	K actOn(T objectToActOn);
 }

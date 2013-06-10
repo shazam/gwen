@@ -10,5 +10,6 @@
 package com.shazam.gwen;
 
 public interface When<T> {
+
 	T when();
 }

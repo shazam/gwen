@@ -9,8 +9,8 @@
 */
 package com.shazam.gwen;
 
-public class Gwen
-{
+public class Gwen {
+
 	public static <T> T given(Given<T> object) {
 		return object.given();
 	}

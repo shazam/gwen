@@ -9,14 +9,12 @@
 */
 package com.shazam.gwen;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 /**
- * This is a marker annotation that declares that when a method is implemented, it is expected to perform a JUnit assertion.
+ * This interface defines an assertion to be performed with the help of an object of type {@link T}. If the assertion
+ * fails, usually a runtime exception is thrown.
+ * @param <T> The type of the object used with the assertion.
  */
-@Target(value = ElementType.METHOD)
-@Retention(value = RetentionPolicy.SOURCE)
-public @interface Assertion {}
+public interface Assertion<T> {
+
+    void assertWith(T objectUsedToPerformAssertion);
+}
