@@ -9,7 +9,7 @@
 */
 package com.shazam.gwen;
 
-public interface Given<T> {
+public interface Given<T> extends Actor {
 
 	T given();
 }

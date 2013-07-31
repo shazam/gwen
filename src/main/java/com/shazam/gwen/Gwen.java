@@ -15,6 +15,14 @@ public class Gwen {
 		return object.given();
 	}
 
+    public static <T extends Actor> T given(T actor) {
+        return actor;
+    }
+
+    /**
+     * @deprecated will be removed in the next version. Use {@link Gwen#given(Actor)} instead.
+     */
+    @Deprecated
 	public static <T> T given(T object) {
 		return object;
 	}
@@ -23,19 +31,43 @@ public class Gwen {
 		return object.when();
 	}
 
-	public static <T> T when(T object) {
-		return object;
-	}
+    public static <T extends Actor> T when(T actor) {
+   		return actor;
+   	}
+
+    /**
+     * @deprecated will be removed in the next version. Use {@link Gwen#when(Actor)} instead.
+     */
+    @Deprecated
+    public static <T> T when(T object) {
+   		return object;
+   	}
 
 	public static <T> T then(Then<T> object) {
 		return object.then();
 	}
 
-	public static <T> T then(T object) {
-		return object;
-	}
+    public static <T extends Actor> T then(T actor) {
+   		return actor;
+   	}
 
-	public static <T> T and(T object) {
-		return object;
-	}
+    /**
+     * @deprecated will be removed in the next version. Use {@link Gwen#then(Actor)} instead.
+     */
+    @Deprecated
+    public static <T> T then(T object) {
+   		return object;
+   	}
+
+    public static <T extends Actor> T and(T actor) {
+   		return actor;
+   	}
+
+    /**
+     * @deprecated will be removed in the next version. Use {@link Gwen#and(Actor)} instead.
+     */
+    @Deprecated
+    public static <T> T and(T object) {
+   		return object;
+   	}
 }

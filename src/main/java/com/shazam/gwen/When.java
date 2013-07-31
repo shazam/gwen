@@ -9,7 +9,7 @@
 */
 package com.shazam.gwen;
 
-public interface When<T> {
+public interface When<T> extends Actor{
 
 	T when();
 }
