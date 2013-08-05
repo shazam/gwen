@@ -15,12 +15,12 @@ public class Gwen {
 		return object.given();
 	}
 
-    public static <T extends Actor> T given(T actor) {
+    public static <T extends Arranger> T given(T actor) {
         return actor;
     }
 
     /**
-     * @deprecated will be removed in the next version. Use {@link Gwen#given(Actor)} instead.
+     * @deprecated will be removed in the next version. Use {@link Gwen#given(Arranger)} instead.
      */
     @Deprecated
 	public static <T> T given(T object) {
@@ -47,24 +47,20 @@ public class Gwen {
 		return object.then();
 	}
 
-    public static <T extends Actor> T then(T actor) {
+    public static <T extends Asserter> T then(T actor) {
    		return actor;
    	}
 
     /**
-     * @deprecated will be removed in the next version. Use {@link Gwen#then(Actor)} instead.
+     * @deprecated will be removed in the next version. Use {@link Gwen#then(Asserter)} instead.
      */
     @Deprecated
     public static <T> T then(T object) {
    		return object;
    	}
 
-    public static <T extends Actor> T and(T actor) {
-   		return actor;
-   	}
-
     /**
-     * @deprecated will be removed in the next version. Use {@link Gwen#and(Actor)} instead.
+     * @deprecated will be removed in the next version. Use respective given, when, then instead
      */
     @Deprecated
     public static <T> T and(T object) {

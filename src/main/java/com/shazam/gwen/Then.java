@@ -9,7 +9,7 @@
 */
 package com.shazam.gwen;
 
-public interface Then<T> extends Actor {
+public interface Then<T> extends Asserter {
 
 	T then();
 }
