@@ -9,6 +9,13 @@
 */
 package com.shazam.gwen;
 
+import com.shazam.gwen.collaborators.Actor;
+import com.shazam.gwen.collaborators.Arranger;
+import com.shazam.gwen.collaborators.Asserter;
+import com.shazam.gwen.gwt.Given;
+import com.shazam.gwen.gwt.Then;
+import com.shazam.gwen.gwt.When;
+
 public class Gwen {
 
 	public static <T> T given(Given<T> object) {
@@ -19,28 +26,12 @@ public class Gwen {
         return actor;
     }
 
-    /**
-     * @deprecated will be removed in the next version. Use {@link Gwen#given(Arranger)} instead.
-     */
-    @Deprecated
-	public static <T> T given(T object) {
-		return object;
-	}
-
 	public static <T> T when(When<T> object) {
 		return object.when();
 	}
 
     public static <T extends Actor> T when(T actor) {
    		return actor;
-   	}
-
-    /**
-     * @deprecated will be removed in the next version. Use {@link Gwen#when(Actor)} instead.
-     */
-    @Deprecated
-    public static <T> T when(T object) {
-   		return object;
    	}
 
 	public static <T> T then(Then<T> object) {
@@ -51,19 +42,4 @@ public class Gwen {
    		return actor;
    	}
 
-    /**
-     * @deprecated will be removed in the next version. Use {@link Gwen#then(Asserter)} instead.
-     */
-    @Deprecated
-    public static <T> T then(T object) {
-   		return object;
-   	}
-
-    /**
-     * @deprecated will be removed in the next version. Use respective given, when, then instead
-     */
-    @Deprecated
-    public static <T> T and(T object) {
-   		return object;
-   	}
 }

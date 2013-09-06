@@ -7,9 +7,15 @@
  *
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
-package com.shazam.gwen;
+package com.shazam.gwen.tasks;
 
-public interface Then<T> extends Asserter {
-
-	T then();
+/**
+ * This interface defines an action to be taken on an object of type {@link T}. The action should return an object of type {@link K} which
+ * describes the state of the system after the action was taken.
+ *
+ * @param <T> The type of the object to act upon.
+ * @param <K> The type describing the state of the system.
+ */
+public interface Action<T, K> {
+	K actOn(T objectToActOn);
 }

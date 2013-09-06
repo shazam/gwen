@@ -7,14 +7,11 @@
  *
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
-package com.shazam.gwen;
+package com.shazam.gwen.gwt;
 
-/**
- * This interface defines an assertion to be performed with the help of an object of type {@link T}. If the assertion
- * fails, usually a runtime exception is thrown.
- * @param <T> The type of the object used with the assertion.
- */
-public interface Assertion<T> {
+import com.shazam.gwen.collaborators.Asserter;
 
-    void assertWith(T objectUsedToPerformAssertion);
+public interface Then<T> extends Asserter {
+
+	T then();
 }
