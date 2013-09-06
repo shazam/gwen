@@ -6,7 +6,7 @@
     <groupId>com.shazam</groupId>
     <artifactId>gwen</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>Gwen</name>
     <description>Library for specifying acceptance criteria in tests in a Given-When-Then format</description>
     <url>http://github.com/shazam/gwen</url>
