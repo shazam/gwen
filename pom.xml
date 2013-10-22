@@ -31,6 +31,42 @@
         <url>http://github.com/shazam/gwen</url>
     </scm>
 
+    <developers>
+        <developer>
+            <id>savvas.dalkitsis</id>
+            <name>Savvas Dalkitsis</name>
+            <email>savvas.dalkitsis@shazam.com</email>
+            <organization>Shazam Entertainment</organization>
+            <organizationUrl>http://www.shazam.com</organizationUrl>
+            <url>https://github.com/savvasdalkitsis</url>
+            <roles>
+                <role>author</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>colin.vipurs</id>
+            <name>Colin Vipurs</name>
+            <email>colin.vipurs@shazam.com</email>
+            <organization>Shazam Entertainment</organization>
+            <organizationUrl>http://www.shazam.com</organizationUrl>
+            <url>https://github.com/mrwiggles</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>daniel.josefsson</id>
+            <name>Daniel Josefsson</name>
+            <email>daniel.josefsson@shazam.com</email>
+            <organization>Shazam Entertainment</organization>
+            <organizationUrl>http://www.shazam.com</organizationUrl>
+            <url>https://github.com/jideji</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
     <profiles>
         <profile>
             <id>customDeployment</id>
